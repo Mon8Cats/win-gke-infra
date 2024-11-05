@@ -13,4 +13,10 @@ Inputs
 3) Bucket Name.
 4) Service Account Name.
 5) Workload Identity Pool Name. 
-6) 
+6)
+
+
+
+git config --global user.name "Bob"
+git config --global user.email "bob@example.com"
+git config credential.username username1  -- this works!!!
