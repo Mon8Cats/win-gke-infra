@@ -20,3 +20,5 @@ Inputs
 git config --global user.name "Bob"
 git config --global user.email "bob@example.com"
 git config credential.username username1  -- this works!!!
+git config credential.username SteveKimMHS
+git push -u origin
