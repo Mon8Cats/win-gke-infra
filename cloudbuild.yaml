@@ -79,4 +79,4 @@ steps:
 
 options:
   logging: CLOUD_LOGGING_ONLY  # This option can be omitted as it's the default behavior for logsBucket
-logsBucket: "gs://win-gke-infra"
+logsBucket: "gs://win-gke-cicd-log"
