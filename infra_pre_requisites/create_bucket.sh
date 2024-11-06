@@ -21,3 +21,12 @@ echo "Bucket gs://$BUCKET_NAME created in $LOCATION for project $PROJECT_ID."
 # gsutil rm gs://your-bucket-name/path/to/terraform.tfstate
 # gsutil rm gs://win-gke-cicd-tf-backend/terraform/state/infra/default.tfstate
 
+
+
+# in gcloud
+# gcloud services enable secretmanager.googleapis.com
+# create a secret 
+# gcloud secrets create GITHUB_TOKEN_SECRET --replication-policy="automatic"
+# add token to the secret 
+# echo your-github-token //add tokenvaluehere | gcloud secrets versions add GITHUB_TOKEN_SECRET --data-file=-
+
