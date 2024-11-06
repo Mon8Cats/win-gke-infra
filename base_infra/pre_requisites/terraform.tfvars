@@ -10,7 +10,8 @@ pre_api_list   = [
     "iamcredentials.googleapis.com",
     "cloudbuild.googleapis.com",
     "artifactregistry.googleapis.com",
-    "secretmanager.googleapis.com"
+    "secretmanager.googleapis.com",
+    "cloudresourcemanager.googleapis.com"
 
     #"cloudbuild.googleapis.com",       # Cloud Build API
     #"artifactregistry.googleapis.com", # Artifact Registry API
@@ -44,6 +45,7 @@ wi_sa_roles = [
   "roles/run.admin",
   "roles/container.developer",
   "roles/iam.serviceAccountUser",
-  #"roles/secretmanager.admin",
+  "roles/secretmanager.admin",
+  "roles/secretmanager.secretAccessor",
   "roles/secretmanager.secretCreator"
 ]

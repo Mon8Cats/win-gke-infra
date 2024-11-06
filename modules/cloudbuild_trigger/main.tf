@@ -13,7 +13,7 @@ resource "google_cloudbuild_github_enterprise_config" "github_connection" {
 
 resource "google_cloudbuild_trigger" "github_trigger" {
   project   = var.project_id
-  name      = "my-github-trigger"
+  name      = var.trigger_name
   
   github {
     owner  = var.github_owner  # Your GitHub user or organization

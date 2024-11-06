@@ -35,3 +35,7 @@ variable "github_oauth_client_secret" {
 variable "cloudbuild_service_account_email" {
   type = string
 }
+
+variable "trigger_name" {
+  type = string
+}

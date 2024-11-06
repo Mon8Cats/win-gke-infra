@@ -4,26 +4,27 @@
 REGION="us-central1"
 CONNECTION_NAME="cicd-connection"
 PROJECT_ID="win-gke-cicd"
-REPOSITORY_NAME_1="Mon8Cats/win-gke-infra"
-REPOSITORY_NAME_2="Mon8Cats/win-gke-app"
 
+REPOSITORY_NAME_1="win-gke-infra"
+REMOTE_URI_1="https://github.com/Mon8Cats/win-gke-infra.git"
 
+REPOSITORY_NAME_2="win-gke-app"
+REMOTE_URI_2="https://github.com/Mon8Cats/win-gke-app.git"
 
-# Repository 1
-gcloud alpha builds repositories create \
-  --region=$REGION \
+# Link Repository 1
+gcloud builds repositories create $REPOSITORY_NAME_1 \
   --connection=$CONNECTION_NAME \
-  --repository=$REPOSITORY_NAME_1 \
+  --region=$REGION \
+  --remote-uri=$REMOTE_URI_1 \
   --project=$PROJECT_ID
 
 echo "Repository '$REPOSITORY_NAME_1' linked successfully in Cloud Build."
 
-# Repository 2
-
-gcloud alpha builds repositories create \
-  --region=$REGION \
+# Link Repository 2
+gcloud builds repositories create $REPOSITORY_NAME_2 \
   --connection=$CONNECTION_NAME \
-  --repository=$REPOSITORY_NAME_2 \
+  --region=$REGION \
+  --remote-uri=$REMOTE_URI_2 \
   --project=$PROJECT_ID
 
 echo "Repository '$REPOSITORY_NAME_2' linked successfully in Cloud Build."
@@ -33,7 +34,7 @@ echo "Repository '$REPOSITORY_NAME_2' linked successfully in Cloud Build."
 
 
 # give the script execution permission
-# chmod +x create_bucket.sh
+# chmod +x link_cloud_build_repository.sh
 
 # run the script
-# ./create_bucket.sh
+# ./link_cloud_build_repository.sh

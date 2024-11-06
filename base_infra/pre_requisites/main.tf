@@ -5,6 +5,10 @@ resource "google_project_service" "enable_pre_apis" {
   for_each = toset(var.pre_api_list)
   project  = var.project_id
   service  = each.key
+
+  disable_on_destroy = true  # Ensures service is disabled when destroying the resource
+
+  disable_dependent_services = true  # Ensures dependent services are also disabled
 }
 
 /*
@@ -99,12 +103,16 @@ resource "google_project_iam_member" "cloud_build_sa_roles" {
 
 # need manual registery mapping in GCP Cloud Build
 
+
+/*
 # cloud build trigger
 module "cloudbuild_trigger" {
   source         = "../modules/cloudbuild_trigger"
   project_id = var.project_id
+  trigger_name = var.trigger_name
   github_owner = var.github_account
   github_repo_only = var.github_repo_only
   cloudbuild_service_account_email = google_service_account.workload_identity_sa.email
 
 }
+*/
