@@ -33,9 +33,9 @@ wi_pool_id = "infra-github-cicd-pool"
 wi_pool_name = "infra-github-cicd-pool"
 wi_provider_id = "infra-github-provider"
 
-github_repository      = "Mon8Cats/devops-gke"
+github_repository      = "Mon8Cats/win-gke-infra"
 github_account         = "Mon8Cats"  # Optional if needed
-github_repo_only  = "devops-gke"
+github_repo_only  = "win-gke-infra"
 
 
 wi_sa_roles = [
