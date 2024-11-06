@@ -44,3 +44,5 @@ echo "Cloud Build connection '$CONNECTION_NAME' created successfully."
 
 
 #echo token_without_quotations | gcloud secrets versions add GITHUB_TOKEN_SECRET --data-file=-
+
+# give permission to the cloud build sa account to access the secrete

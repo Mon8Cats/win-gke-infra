@@ -38,3 +38,6 @@ echo "Repository '$REPOSITORY_NAME_2' linked successfully in Cloud Build."
 
 # run the script
 # ./link_cloud_build_repository.sh
+
+
+# gcloud builds repositories list --region=global --project=win-gke-cicd

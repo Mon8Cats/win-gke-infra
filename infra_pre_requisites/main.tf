@@ -108,6 +108,7 @@ resource "google_project_iam_member" "cloud_build_sa_roles" {
 
 
 # cloud build trigger
+/*
 module "cloudbuild_trigger" {
   source         = "../modules/cloudbuild_trigger"
   project_id = var.project_id
@@ -117,3 +118,4 @@ module "cloudbuild_trigger" {
   cloudbuild_service_account_email = google_service_account.workload_identity_sa.email
 
 }
+*/
