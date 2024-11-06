@@ -41,6 +41,11 @@ variable "wi_pool_id" {
   type        = string
 }
 
+variable "wi_pool_name" {
+  description = "The region for the resources"
+  type        = string
+}
+
 variable "wi_provider_id" {
   description = "The region for the resources"
   type        = string

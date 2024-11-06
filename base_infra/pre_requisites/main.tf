@@ -47,7 +47,7 @@ resource "google_service_account" "workload_identity_sa" {
 resource "google_iam_workload_identity_pool" "github_pool" {
   provider                  = google-beta
   workload_identity_pool_id = var.wi_pool_id
-  display_name              = "Infra WI Pool"
+  display_name              = var.wi_pool_name
   description               = "Infra WI Pool"
 
   depends_on = [google_project_service.enable_pre_apis]

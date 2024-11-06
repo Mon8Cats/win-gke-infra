@@ -29,7 +29,8 @@ backend_bucket_name = "win-gke-cicd-tf-backend"
 backend_bucket_prefix = "terraform/state/infra" 
 
 wi_sa_id = "infra-service-account"
-wi_pool_id = "infra-github-pool"
+wi_pool_id = "infra-github-cicd-pool"
+wi_pool_name = "infra-github-cicd-pool"
 wi_provider_id = "infra-github-provider"
 
 github_repository      = "Mon8Cats/devops-gke"
@@ -45,7 +46,7 @@ wi_sa_roles = [
   "roles/run.admin",
   "roles/container.developer",
   "roles/iam.serviceAccountUser",
-  "roles/secretmanager.admin",
-  "roles/secretmanager.secretAccessor",
-  "roles/secretmanager.secretCreator"
+  #"roles/secretmanager.admin",
+  #"roles/secretmanager.secretAccessor",
+  #"roles/secretmanager.secretCreator"
 ]
