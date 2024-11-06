@@ -12,7 +12,8 @@ resource "google_project_service" "enable_pre_apis" {
 }
 
 /*
-# create bucket 
+# create bucket
+# manually create 
 resource "google_storage_bucket" "terraform_backend_bucket" {
   name          = var.backend_bucket_name
   location      = var.region
@@ -43,6 +44,7 @@ resource "google_service_account" "workload_identity_sa" {
   depends_on = [google_project_service.enable_pre_apis]
 }
 
+/*
 # create WI pool
 resource "google_iam_workload_identity_pool" "github_pool" {
   provider                  = google-beta
@@ -99,7 +101,7 @@ resource "google_project_iam_member" "cloud_build_sa_roles" {
 
   depends_on = [google_project_service.enable_pre_apis]
 }
-
+*/
 
 # need manual registery mapping in GCP Cloud Build
 

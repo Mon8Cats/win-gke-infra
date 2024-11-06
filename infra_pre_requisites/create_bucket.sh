@@ -17,3 +17,6 @@ echo "Bucket gs://$BUCKET_NAME created in $LOCATION for project $PROJECT_ID."
 
 # run the script
 # ./create_bucket.sh
+
+# gsutil rm gs://your-bucket-name/path/to/terraform.tfstate
+# gsutil rm gs://win-gke-cicd-tf-backend/terraform/state/infra/default.tfstate
