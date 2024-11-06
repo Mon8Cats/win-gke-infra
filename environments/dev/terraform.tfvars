@@ -1,5 +1,7 @@
-gcp_project     = "gcplearn9"
+gcp_project = "win-gke-cicd"
+//project_number = "650839457214"
 gcp_region     = "us-central1"
+
 environment     = "dev"
 business_divsion = "hr"
 subnet_ip_range  = "10.128.0.0/20"

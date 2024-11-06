@@ -1,7 +1,6 @@
 # environments/dev/terraform.tfvars
-
-project_id = "mon-devops-gke"
-project_number = "57251267171"
+project_id = "win-gke-cicd"
+project_number = "650839457214"
 region     = "us-central1"
 
 pre_api_list   = [
