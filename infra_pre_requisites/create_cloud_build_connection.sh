@@ -43,5 +43,4 @@ echo "Cloud Build connection '$CONNECTION_NAME' created successfully."
 # echo "your-github-token //add tokenvaluehere | gcloud secrets versions add GITHUB_TOKEN_SECRET --data-file=-
 
 
-
-
+#echo token_without_quotations | gcloud secrets versions add GITHUB_TOKEN_SECRET --data-file=-
