@@ -78,3 +78,8 @@ variable "wi_sa_roles" {
     "roles/iam.serviceAccountUser"
   ]
 }
+
+variable "trigger_name" {
+  description = "The trigger name"
+  type        = string
+}

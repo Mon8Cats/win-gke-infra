@@ -50,3 +50,5 @@ wi_sa_roles = [
   #"roles/secretmanager.secretAccessor",
   #"roles/secretmanager.secretCreator"
 ]
+
+trigger_name = "infra-cicd-trigger"
