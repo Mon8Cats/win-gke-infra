@@ -21,5 +21,5 @@ module "workloadidentity" {
   wi_pool_name = var.wi_pool_name
   wi_pool_provider_id = var.wi_pool_provider_id
   github_repository = var.github_repository
-  service_account_id = var.wi_sa_id
+  service_account_id = "projects/${var.project_id}/serviceAccounts/${var.wi_sa_id}@${var.project_id}.iam.gserviceaccount.com"
 }

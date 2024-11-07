@@ -4,7 +4,8 @@ project_region     = "us-central1"
 
 # infra-service-account@win-gke-cicd.iam.gserviceaccount.com
 #wi_sa_id = "projects/${var.project_id}/serviceAccounts/infra-service-account@win-gke-cicd.iam.gserviceaccount.com"
-wi_sa_id = "projects/${var.project_id}/serviceAccounts/infra-service-account@${var.project_id}.iam.gserviceaccount.com"
+wi_sa_id = "infra-service-account"
+#wi_sa_id = "projects/${var.project_id}/serviceAccounts/infra-service-account@${var.project_id}.iam.gserviceaccount.com"
 wi_pool_id = "app-github-cicd-pool"
 wi_pool_name = "app-github-cicd-pool"
 wi_pool_provider_id = "app-github-provider"
