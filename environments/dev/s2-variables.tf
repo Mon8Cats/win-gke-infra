@@ -20,29 +20,11 @@ variable "subnet_name" {
   type        = string
 }
 
-variable "subnet_ip_range" {
-  description = "CIDR range of the subnet"
-  type        = string
-}
 
 variable "subnet_region" {
   description = "Region for the subnet"
   type        = string
 }
-
-
-
-
-# GCP Project
-variable "gcp_project" {
-  description = "Project in which GCP Resources to be created"
-  type = string
-  default = "kdaida123"
-}
-
-# GCP Region
-
-
 
 
 # Environment Variable
