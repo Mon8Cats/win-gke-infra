@@ -46,6 +46,9 @@ wi_sa_roles = [
   "roles/run.admin",
   "roles/container.developer",
   "roles/iam.serviceAccountUser",
+  "roles/compute.networkAdmin",
+  "roles/compute.securityAdmin",
+  "roles/compute.subnetworkAdmin"
   #"roles/secretmanager.admin",
   #"roles/secretmanager.secretAccessor",
   #"roles/secretmanager.secretCreator"
