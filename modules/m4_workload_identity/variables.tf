@@ -1,4 +1,7 @@
-
+variable "project_id" {
+  description = "The GCP project ID"
+  type        = string
+}
 
 variable "wi_pool_id" {
   description = "Id of the workload idenitity pool"
