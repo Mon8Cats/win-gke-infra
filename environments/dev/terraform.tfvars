@@ -2,7 +2,17 @@ project_id = "win-gke-cicd"
 //project_number = "650839457214"
 project_region     = "us-central1"
 
+#
+wi_sa_id = "infra-service-account"
+wi_pool_id = "app-github-cicd-pool"
+wi_pool_name = "app-github-cicd-pool"
+wi_pool_provider_id = "app-github-provider"
+#
+github_repository      = "Mon8Cats/win-gke-app"
+github_account         = "Mon8Cats"  # Optional if needed
+github_repo_only  = "win-gke-infra"
 
+#
 environment     = "dev"
 business_divsion = "AppDev"
 subnet_ip_range  = "10.128.0.0/20"

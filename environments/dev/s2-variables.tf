@@ -10,6 +10,46 @@ variable "project_region" {
 }
 
 
+variable "wi_sa_id" {
+  description = "The region for the resources"
+  type        = string
+}
+
+variable "wi_pool_id" {
+  description = "The region for the resources"
+  type        = string
+}
+
+variable "wi_pool_name" {
+  description = "The region for the resources"
+  type        = string
+}
+
+variable "wi_pool_provider_id" {
+  description = "The region for the resources"
+  type        = string
+}
+
+variable "github_repository" {
+  description = "The region for the resources"
+  type        = string
+}
+
+variable "github_account" {
+  description = "The GitHub Account"
+  type        = string
+}
+
+variable "github_repository" {
+  description = "The region for the resources"
+  type        = string
+}
+
+variable "github_repo_only" {
+  description = "The region for the resources"
+  type        = string
+}
+
 variable "network_name" {
   description = "Name of the VPC network"
   type        = string
