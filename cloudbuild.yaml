@@ -70,6 +70,9 @@ steps:
         cd environments/$BRANCH_NAME      
         terraform apply -auto-approve
       else
+        cd environments/dev     
+        terraform apply -auto-approve
+
         echo "***************************** SKIPPING APPLYING *******************************"
         echo "Branch '$BRANCH_NAME' does not represent an official environment."
         echo "*******************************************************************************"
