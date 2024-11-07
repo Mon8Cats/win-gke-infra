@@ -66,7 +66,7 @@ steps:
   args: 
   - '-c'
   - | 
-      if [ "$BRANCH_NAME" = "main" ] || [ -d "environments/$BRANCH_NAME/" ]; then
+      if [ "$BRANCH_NAME" = "dev" ] || [ -d "environments/$BRANCH_NAME/" ]; then
         cd environments/$BRANCH_NAME      
         terraform apply -auto-approve
       else
