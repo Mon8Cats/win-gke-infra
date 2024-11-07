@@ -30,10 +30,6 @@ variable "wi_pool_provider_id" {
   type        = string
 }
 
-variable "github_repository" {
-  description = "The region for the resources"
-  type        = string
-}
 
 variable "github_account" {
   description = "The GitHub Account"
