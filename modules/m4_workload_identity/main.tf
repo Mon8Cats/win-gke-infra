@@ -6,7 +6,7 @@ resource "google_iam_workload_identity_pool" "github_pool" {
   display_name              = var.wi_pool_name
   description               = "Infra WI Pool"
 
-  depends_on = [google_project_service.enable_pre_apis]
+  
 }
 
 # create WI provider
@@ -30,7 +30,7 @@ resource "google_iam_workload_identity_pool_provider" "github_provider" {
   # Specify the condition to match GitHub's repository claim
   attribute_condition = "attribute.repository == '${var.github_repository}'"
 
-  depends_on = [google_project_service.enable_pre_apis]
+
 }
 
 
