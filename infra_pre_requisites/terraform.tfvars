@@ -44,6 +44,7 @@ wi_sa_roles = [
   "roles/artifactregistry.reader",
   "roles/storage.admin",
   "roles/run.admin",
+  "roles/iam.workloadIdentityPoolAdmin",
   "roles/container.developer",
   "roles/iam.serviceAccountUser",
   "roles/compute.networkAdmin",
