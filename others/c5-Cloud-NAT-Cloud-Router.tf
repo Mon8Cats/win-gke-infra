@@ -1,8 +1,9 @@
 # Resource: Cloud Router
+/*
 resource "google_compute_router" "cloud_router" {
-  name    = "${local.name}-${var.gcp_region}-cloud-router"
-  network = google_compute_network.myvpc.id
-  region  = var.gcp_region
+  #name    = "${local.name}-${var.gcp_region}-cloud-router"
+  #network = google_compute_network.myvpc.id
+  #region  = var.gcp_region
 }
 
 # Resource: Cloud NAT
@@ -17,3 +18,4 @@ resource "google_compute_router_nat" "cloud_nat" {
     filter = "ALL"
   }
 }
+*/

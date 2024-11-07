@@ -1,4 +1,5 @@
 # Define Local Values in Terraform
+/*
 locals {
   owners = var.business_divsion
   environment = var.environment
@@ -9,3 +10,4 @@ locals {
     environment = local.environment
   }
 } 
+*/

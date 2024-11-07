@@ -1,4 +1,5 @@
 # Resource: VPC
+/*
 resource "google_compute_network" "myvpc" {
   name = "${local.name}-vpc"
   auto_create_subnetworks = false   
@@ -36,3 +37,4 @@ output "mysubnet_id" {
   description = "Subnet ID"
   value = google_compute_subnetwork.mysubnet.id 
 }
+*/

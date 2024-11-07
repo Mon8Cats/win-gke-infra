@@ -1,4 +1,38 @@
-# Input Variables
+variable "project_id" {
+  description = "Project ID for the GCP project"
+  type        = string
+}
+
+variable "project_region" {
+  description = "Region in which GCP Resources to be created"
+  type = string
+  default = "us-east1"
+}
+
+
+variable "network_name" {
+  description = "Name of the VPC network"
+  type        = string
+}
+
+variable "subnet_name" {
+  description = "Name of the subnet"
+  type        = string
+}
+
+variable "subnet_ip_range" {
+  description = "CIDR range of the subnet"
+  type        = string
+}
+
+variable "subnet_region" {
+  description = "Region for the subnet"
+  type        = string
+}
+
+
+
+
 # GCP Project
 variable "gcp_project" {
   description = "Project in which GCP Resources to be created"
@@ -7,11 +41,9 @@ variable "gcp_project" {
 }
 
 # GCP Region
-variable "gcp_region" {
-  description = "Region in which GCP Resources to be created"
-  type = string
-  default = "us-east1"
-}
+
+
+
 
 # Environment Variable
 variable "environment" {

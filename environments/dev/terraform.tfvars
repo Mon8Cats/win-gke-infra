@@ -1,9 +1,10 @@
-gcp_project = "win-gke-cicd"
+project_id = "win-gke-cicd"
 //project_number = "650839457214"
-gcp_region     = "us-central1"
+project_region     = "us-central1"
+
 
 environment     = "dev"
-business_divsion = "hr"
+business_divsion = "AppDev"
 subnet_ip_range  = "10.128.0.0/20"
 pods_ip_range    = "10.1.0.0/21"
 services_ip_range = "10.2.0.0/21"

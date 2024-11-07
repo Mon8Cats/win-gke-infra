@@ -8,13 +8,13 @@ terraform {
     }
   }
   backend "gcs" {
-    bucket = "terraform-on-gcp-gke"
+    bucket = "win-gke-infra"
     prefix = "dev/gke-cluster"    
   }
 }
 
 # Terraform Provider Block
 provider "google" {
-  project = var.gcp_project
-  region = var.gcp_region
+  project = var.project_id
+  region = var.project_region
 }
