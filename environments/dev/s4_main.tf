@@ -52,3 +52,9 @@ module "allow_ssh" {
 }
 
 
+module "artifact_registry_repository" {
+  source         = "../../modules/m6_artifact_repository"
+  project_id = var.project_id
+  region = var.project_region
+  repository_name = "win_repo"
+}
