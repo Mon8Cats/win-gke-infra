@@ -10,7 +10,7 @@ resource "google_artifact_registry_repository" "docker_repository" {
   labels           = var.labels
 
   lifecycle {
-    prevent_destroy = var.prevent_destroy
+    prevent_destroy = true #var.prevent_destroy
   }
 }
 

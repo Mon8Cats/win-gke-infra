@@ -32,8 +32,10 @@ variable "labels" {
   default     = {}
 }
 
+/*
 variable "prevent_destroy" {
   description = "Whether to prevent the repository from being destroyed"
   type        = bool
   default     = false
 }
+*/
