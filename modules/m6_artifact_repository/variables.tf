@@ -23,7 +23,7 @@ variable "description" {
 variable "mode" {
   description = "The mode of the repository (STANDARD or VPC)"
   type        = string
-  default     = "STANDARD"
+  default     = "STANDARD_REPOSITORY"
 }
 
 variable "labels" {

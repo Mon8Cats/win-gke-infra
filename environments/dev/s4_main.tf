@@ -57,4 +57,6 @@ module "artifact_registry_repository" {
   project_id = var.project_id
   region = var.project_region
   repository_id = "win_repo"
+  description     = "Repository for storing Docker images"
+  mode            = "STANDARD_REPOSITORY"
 }
