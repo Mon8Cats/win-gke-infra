@@ -56,7 +56,7 @@ module "artifact_registry_repository" {
   source         = "../../modules/m6_artifact_repository"
   project_id = var.project_id
   region = var.project_region
-  repository_id = "win_repo"
+  repository_id = "win-repo" # no underscore 4 to 63 characters
   description     = "Repository for storing Docker images"
   mode            = "STANDARD_REPOSITORY"
 }
