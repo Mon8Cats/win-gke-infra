@@ -11,16 +11,13 @@ pre_api_list   = [
     "cloudbuild.googleapis.com",
     "artifactregistry.googleapis.com",
     "secretmanager.googleapis.com",
-    "cloudresourcemanager.googleapis.com"
+    "cloudresourcemanager.googleapis.com",
 
-    #"cloudbuild.googleapis.com",       # Cloud Build API
-    #"artifactregistry.googleapis.com", # Artifact Registry API
-    #"iam.googleapis.com",              # IAM API
-    #"compute.googleapis.com",          # Compute Engine API
-    #"run.googleapis.com",              # Cloud Run API
-    #"cloudfunctions.googleapis.com",   # Cloud Functions API
-    #"container.googleapis.com",        # Kubernetes Engine API
-    #"appengine.googleapis.com",        # App Engine Admin API
+    "compute.googleapis.com",          # Compute Engine API
+    "run.googleapis.com",              # Cloud Run API
+    "cloudfunctions.googleapis.com",   # Cloud Functions API
+    "container.googleapis.com",        # Kubernetes Engine API
+    "appengine.googleapis.com",        # App Engine Admin API
     #"cloudresourcemanager.googleapis.com", # Resource Manager API
     # Add or remove APIs as needed
   ]
@@ -52,7 +49,8 @@ wi_sa_roles = [
   "roles/iam.serviceAccountUser",
   "roles/compute.networkAdmin",
   "roles/compute.securityAdmin",
-  "roles/iam.serviceAccountAdmin"
+  "roles/iam.serviceAccountAdmin",
+  "roles/serviceusage.serviceUsageAdmin"
   #"roles/compute.subnetworkAdmin"
   #"roles/secretmanager.admin",
   #"roles/secretmanager.secretAccessor",
