@@ -42,6 +42,8 @@ wi_sa_roles = [
   "roles/cloudbuild.builds.builder",
   "roles/source.reader",
   "roles/artifactregistry.reader",
+  "roles/artifactregistry.writer",
+  "roles/artifactregistry.admin",
   "roles/storage.admin",
   "roles/run.admin",
   "roles/iam.workloadIdentityPoolAdmin",
