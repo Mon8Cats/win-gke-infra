@@ -9,7 +9,7 @@ variable "region" {
   default     = "us-central1"
 }
 
-variable "repository_name" {
+variable "repository_id" {
   description = "The name of the Artifact Registry repository"
   type        = string
 }
