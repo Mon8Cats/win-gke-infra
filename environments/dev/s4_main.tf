@@ -78,7 +78,7 @@ data "google_secret_manager_secret_version" "db_password" {
 
 
 module "cloud_sql_postgres" {
-  source            = "../../m7_cloud_sql_postgres"
+  source            =  "../../modules/m7_cloud_sql_postgres"
   project_id        = var.project_id
   region            = var.project_region
   instance_name     = "my-postgres-instance"
