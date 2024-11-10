@@ -60,3 +60,33 @@ module "artifact_registry_repository" {
   description     = "Repository for storing Docker images"
   mode            = "STANDARD_REPOSITORY"
 }
+
+# Data source to retrieve the db_user from Secret Manager
+data "google_secret_manager_secret_version" "db_user" {
+  project = var.project_id
+  secret  = "db_user"  # The name of your secret in Secret Manager
+  version = "latest"
+}
+
+# Data source to retrieve the db_password from Secret Manager
+data "google_secret_manager_secret_version" "db_password" {
+  project = var.project_id
+  secret  = "db_password"  # The name of your secret in Secret Manager
+  version = "latest"
+}
+
+
+
+module "cloud_sql_postgres" {
+  source            = "../../m7_cloud_sql_postgres"
+  project_id        = var.project_id
+  region            = var.project_region
+  instance_name     = "my-postgres-instance"
+  database_name     = "my_database"
+  db_user           = data.google_secret_manager_secret_version.db_user.secret_data
+  db_password       = data.google_secret_manager_secret_version.db_user.secret_data
+  tier              = "db-f1-micro"
+  database_version  = "POSTGRES_14"
+  enable_private_ip = false
+  availability_type = "ZONAL"
+}

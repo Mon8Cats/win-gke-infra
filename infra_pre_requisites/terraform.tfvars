@@ -50,7 +50,10 @@ wi_sa_roles = [
   "roles/compute.networkAdmin",
   "roles/compute.securityAdmin",
   "roles/iam.serviceAccountAdmin",
-  "roles/serviceusage.serviceUsageAdmin"
+  "roles/serviceusage.serviceUsageAdmin",
+  "roles/cloudsql.admin",
+  "roles/viewer",
+  "roles/secretmanager.secretAccessor"
   #"roles/compute.subnetworkAdmin"
   #"roles/secretmanager.admin",
   #"roles/secretmanager.secretAccessor",
