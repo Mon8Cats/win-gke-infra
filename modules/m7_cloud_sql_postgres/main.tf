@@ -12,13 +12,14 @@ resource "google_sql_database_instance" "postgres_instance" {
     }
     ip_configuration {
       ipv4_enabled    = true
-      private_network = var.enable_private_ip ? "projects/${var.project_id}/global/networks/default" : null
+      private_network = var.enable_private_ip ? "projects/${var.project_id}/global/networks/${var.vpc_name}" : null
+
       #require_ssl     = true
     }
   }
 }
 
-resource "google_sql_database" "database" {
+resource "google_sql_database" "my_database" {
   name     = var.database_name
   instance = google_sql_database_instance.postgres_instance.name
   project = var.project_id

@@ -89,4 +89,5 @@ module "cloud_sql_postgres" {
   database_version  = "POSTGRES_14"
   enable_private_ip = false
   availability_type = "ZONAL"
+  vpc_name          = "win-vpc"
 }

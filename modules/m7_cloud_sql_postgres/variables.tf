@@ -55,4 +55,8 @@ variable "availability_type" {
   default     = "ZONAL"
 }
 
+variable "vpc_name" {
+  description = "Name of the custom VPC network"
+  type        = string
+}
 

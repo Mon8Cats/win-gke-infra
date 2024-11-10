@@ -6,7 +6,7 @@ output "instance_connection_name" {
 
 output "database_name" {
   description = "Name of the PostgreSQL database"
-  value       = google_sql_database.name
+  value       = google_sql_database.my_database.name
 }
 
 output "db_user" {
